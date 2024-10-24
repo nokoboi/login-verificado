@@ -29,8 +29,8 @@ if(isset($_SESSION['success']) && isset($_SESSION['message'])){
     <div class="container">
         <form method="POST" action="controllers/usuarioController.php">
             <h2>Login</h2>
-            <input type="email" required placeholder="Correo electrónico">
-            <input type="password" required placeholder="Contraseña">
+            <input type="email" name="email" required placeholder="Correo electrónico">
+            <input type="password" name="password" required placeholder="Contraseña">
             <a class="abrir-modal-recuperar">Recuperar Contraseña</a>
             <input type="submit" name="login" value="Iniciar sesión">
         </form>

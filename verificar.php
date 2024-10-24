@@ -8,6 +8,9 @@ if(isset($_GET['token'])){
     $token = $_GET['token'];
     $resultado = $usuarioBD->verificarToken($token);
     $mensaje = $resultado['message'];
+}else{
+    header("Location: index.php");
+    exit();
 }
 
 ?>
